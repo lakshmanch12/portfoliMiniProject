@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link href ="./assets/css/style.css" rel="stylesheet" type="text/css">
+     <script src="./assets/js/mysheet.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-typeahead/2.11.2/jquery.typeahead.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+     <style>
+  html,
+  body {
+    position: relative;
+    /* height: 100%; */
+  }
+ 
+.tt-hint {
+    color: #999;
+}
+.tt-menu { /* UPDATE: newer versions use tt-menu instead of tt-dropdown-menu */
+    width: 190px;
+    /*margin-top: 0px;*/
+    /*padding: 4px 0;*/
+    background-color: white;
+    /*border: 1px solid #ccc;*/
+    /*border: 1px solid rgba(0, 0, 0, 0.2);*/
+    /*border-radius: 4px;*/
+    /*box-shadow: 0 5px 5px rgba(0,0,0,.2);*/
+}
+.tt-suggestion {
+    padding: 3px 20px;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: pointer;
+}
+.tt-suggestion:hover {
+    color:white;
+    background-color: black;
+}
+
+
+</style>
+
+  </head>
+  <body >
+    <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+      <div class="image p-4"> <img src="./assets/images/header_logo.png" alt="header-logo"> </div>
+    <!-- <a class="navbar-brand" href="#">Navbar scroll</a> -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  data-bs-toggle="tooltip" title="Home " href="#"><h4>Home</h4></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  data-bs-toggle="tooltip" title="ABOUTME" href="#"><h4>Aboutme</h4></a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page"  data-bs-toggle="tooltip" title="CONTACT " href="#"><h4>CONTACT</h4></a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <div id="the-basics">
+                          <input class="typeahead m-2"   data-toggle="tooltip" data-placement="bottom" title="Search" type="text" placeholder="Search">
+                        </div>
+        <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+        <!-- <button class="btn btn-outline-success" type="submit">Search</button> -->
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <!--  -->
+  
+    <!-- End Example Code -->
+     <div class="container-fluid">
+ <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./assets/images/image1.jpg" class="d-block w-100" alt="..." width="100%" height="600vh">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+       <img src="./assets/images/image2.jpg" class="d-block w-100" alt="..." width="100%" height="600vh">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+       <img src="./assets/images/image7.jpg" class="d-block w-100" alt="..." width="100%" height="600vh">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="text-center">   <h3> Nature</h3></div>
+ <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <div class="card" style="width: 22rem;">
+<img src="./assets/images/goa.jpg"alt="..."class="card-img-top" width="100%" height="400vh">
+  <div class="card-body">
+    <h5 class="card-title">GOA</h5>
+    <p class="card-text">The smallest state of India, filled with fun, sunshine, and cultural diversions.The word Goa recharges our spirits.</p>
+    <a href="./screen1.html" class="btn btn-primary" data-bs-toggle="tooltip" title="tap">view more</a>
+  </div>
+</div>
+</div>
+ <div class="swiper-slide">
+            <div class="card" style="width: 22rem;">
+<img src="./assets/images/kerala.jpeg"alt="..."class="card-img-top" width="100%" height="400vh">
+  <div class="card-body">
+    <h5 class="card-title">KERALA</h5>
+    <p class="card-text">The soul of Kerala is fabulous villages. The beauty and peaceful of Kerala villages is a refreshing experience  .</p>
+    <a href="./screen2.html" class="btn btn-primary" data-bs-toggle="tooltip" title="tap">view more</a>
+  </div>
+</div>
+</div>
+ <div class="swiper-slide">
+            <div class="card" style="width: 22rem;">
+<img src="./assets/images/tamilnaidu.jpg"alt="..."class="card-img-top" width="100%" height="400vh">
+  <div class="card-body">
+    <h5 class="card-title">TAMILNAIDU</h5>
+    <p class="card-text">Tamil Nadu is place in South India where the architecture and brilliant sculptures of its ancient temples  places. </p>
+    <a href="./screen3.html" class="btn btn-primary" data-bs-toggle="tooltip" title="tap">view more</a>
+  </div>
+</div>
+</div>
+ <div class="swiper-slide">
+            <div class="card" style="width: 22rem;">
+<img src="./assets/images/raj.jpeg"alt="..."class="card-img-top" width="100%" height="400vh">
+  <div class="card-body">
+    <h5 class="card-title">RAJASTHAN</h5>
+    <p class="card-text">rajasthan is more then just a desert. it's a tourismgem and jewel with lot of specials on kingdom dddd forts.</p>
+    <a href="./screen4.html" class="btn btn-primary" data-bs-toggle="tooltip" title="tap">view more</a>
+  </div>
+</div>
+</div>
+ <div class="swiper-slide">
+            <div class="card" style="width: 22rem;">
+<img src="./assets/images/mum.jpeg"alt="..."class="card-img-top" width="100%" height="400vh">
+  <div class="card-body">
+    <h5 class="card-title">MUMBAI</h5>
+    <p class="card-text">A city that never sleeps, a land with a spirit of gold and residents with a never say die attitude  millions world over</p>
+    <a href="./screen5.html" class="btn btn-primary" data-bs-toggle="tooltip" title="tap">view more</a>
+  </div>
+</div>
+</div>
+ <div class="swiper-slide">
+            <div class="card" style="width: 22rem;">
+<img src="./assets/images/ban.jpg"alt="..."class="card-img-top" width="100%" height="400vh">
+  <div class="card-body">
+    <h5 class="card-title">BANGALORE</h5>
+    <p class="card-text">'The City of Lakes', because of the large number of lakes present in the city. There are 25 lakes  in the city.</p>
+    <a href="./screen6.html" class="btn btn-primary" data-bs-toggle="tooltip" title="tap">view more</a>
+  </div>
+</div>
+</div>
+        
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+        
+
+        <!-- galeery -->
+        <div class ="container w-100 h-100 text-center">
+          <div class="py-4">
+            <h1 class="text-uppercase">my gallery </h1>
+            <div class ="row no-gutters gallerys">
+              <div class= "col-lg-4 col-md-4 col-sm-6 col-12">
+                <a href="./assets/images/image2.jpg" target ="_blank"><img src="./assets/images/image2.jpg" class ="img-fluid"></a>
+              </div>
+               <div class= "col-lg-4 col-md-4 col-sm-6 col-12">
+                <a href="./assets/images/image5.jpg" target ="_blank"><img src="./assets/images/image5.jpg" class ="img-fluid"></a>
+              </div>
+              <div class= "col-lg-4 col-md-4 col-sm-6 col-12">
+                <a href="./assets/images/image6.jpg" target ="_blank"><img src="./assets/images/image6.jpg" class ="img-fluid"></a>
+              </div>
+              </div>
+            </div>
+          </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+     <script >
+       $(document).ready(function() {
+  $('.gallerys').magnificPopup({type:'image',delegate:'a', gallery:{enabled:true}});
+                                   
+                                   });
+     </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.jquery.min.js"></script>
+ <script>
+
+  var substringMatcher = function(strs) {
+    console.log('strs', strs);
+    return function findMatches(q, cb) {
+      console.log('q', q);
+      var matches, substringRegex;
+  
+      // an array that will be populated with substring matches
+      matches = [];
+      console.log('matches', matches);
+  
+      // regex used to determine if a string contains the substring `q`
+      substrRegex = new RegExp(q, 'i');
+  
+      // iterate through the pool of strings and for any string that
+      // contains the substring `q`, add it to the `matches` array
+      $.each(strs, function(i, str) {
+        if (substrRegex.test(str)) {
+          matches.push(str);
+        }
+      });
+      
+      console.log('matches', matches);
+      cb(matches);
+    };
+  };
+  
+   var states = ['Appliances', '  Albania', 'Algeria ', 'Andorra', '  Australia',
+   'Azerbaijan', '  Bangladesh', 'Belgium', 'Benin ', 'Bhutan ', '  Cambodia',
+    'China', '  Colombia', '  Comoros', 'Denmark', '  Dominican Republic', '  Equatorial Guinea', 'Egypt',
+    '  Equatorial Guinea ', ' Ethiopia', 'Finland', 'France', ' Gabon',   '  Germany', 'Greece', 'Grenada', ' Guinea-Bissau', ' Haiti',
+    ' Honduras', '  Iceland', ' India', ' Indonesia', ' Iran',
+    'Holy See', ' Ireland', ' Israel', 'Italy', 'Jamaica',  ' Japan', '  Kiribati', ' Kuwait', '  Kyrgyzstan', '  Laos', '  Luxembourg',
+     '  Malaysia', 'Maldives',' Mali', 'Marshall Islands', '  Mauritania','Mauritius','Mexico','Micronesia'
+  ];
+  
+  
+  
+  $(document).ready(function(){
+      $('#the-basics .typeahead').typeahead({
+    hint: true,
+    highlight: true,
+    minLength: 1
+  },
+  {
+    name: 'states',
+    source: substringMatcher(states)
+
+  });
+  
+    
+    
+        })
+    </script>
+   
+   
+   
+  
+ 
+
+
+
+
+   <div class ="container"> 
+   <form name="myform" method="post"  onsubmit="return " style=" border: 2px solid gray;padding: 10px;border-radius: 2px;">
+      <div class="mb-3 mt-3 p-2 bg-secondary">
+        <label>Name:</label>
+        <input type="text" class="form-control input"  placeholder="" name="name" id="name">
+        <div>
+          <label for="email" class="form-label" id="star">rateing</label></div>
+          <div>
+          <i class = "fa fa-star starrate star" aria-hidden = "true" id = "st1"></i>
+         <i class = "fa fa-star starrate star" aria-hidden = "true" id = "st2"></i>
+         <i class = "fa fa-star starrate star" aria-hidden = "true" id = "st3"></i>
+         <i class = "fa fa-star starrate star" aria-hidden = "true" id = "st4"></i>
+         <i class = "fa fa-star starrate star" aria-hidden = "true" id = "st5"></i>
+         </div> 
+         <label for="comment">feedback:</label>
+<textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+
+ </div>
+
+     
+      
+    
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-secondary" id="submit"data-bs-toggle="modal" data-bs-target="#myModal">
+  Submit
+</button>
+</form>
+</div>
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+   <div id="modal_body"></div>
+   <div>
+              <i class = "fa fa-star starrate star" aria-hidden = "true" id = "st1"></i>
+               <i class = "fa fa-star starrate star" aria-hidden = "true" id = "st2"></i>
+               <i class = "fa fa-star starrate star" aria-hidden = "true" id = "st3"></i>
+               <i class = "fa fa-star starrate star" aria-hidden = "true" id = "st4"></i>
+               <i class = "fa fa-star starrate star" aria-hidden = "true" id = "st5"></i>
+               </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+  <script >
+    $("#submit").click(function () {
+     var name = $("#name").val();
+      var star = $("#star").val();
+      var comment = $("#comment").val();
+      var str = `Details Name: ${name} and rating: ${star} and feedback: ${comment}`
+    
+       $("#modal_body").html(str);
+    });
+  </script>
+
+<div class="footer">
+  <div class="container">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+          <div class="logo"> <img src ="./assets/images/footer_logo.png"> </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+          <ul class="list-group list-group-horizontal mx-auto justify-content-center">
+            <li class="list-group-item">About</li>
+            <li class="list-group-item">Contact</li>
+            <li class="list-group-item">Privacy</li>
+            <li class="list-group-item">Terms</li>
+            <li class="list-group-item">single post</li>
+          </ul>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 ">
+              <p>© Digiqole, 2022. All rights reserved.</p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 ">
+              <div class="socialicons1"> <a href="#" target="_blank" style="text-decoration:none !important"><i class="fab fa-facebook-f fb-icon"></i> </a> <a href="#" target="_blank"> <i class="fab fa-twitter twitter-icon"></i></a> <a href="#" target="_blank"><i class="fab fa-instagram"></i></a> <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="#" target="_blank"><i class="fab fa-tumblr"></i></a> <a href="#" target="_blank"><i class="fab fa-vimeo-v"></i></a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        // slidesPerGroup: 1,
+        // loop: true,
+        // loopFillGroupWithBlank: true,
+       
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+         breakpoints: {
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }
+      });
+    </script>
+
+
+
+
+
+<script>
+        $(document).ready(function() {
+          $("#st1").hover(function() {
+              $(".fa-star").css("color", "black");
+              $("#st1").css("color", "yellow");
+
+          });
+          $("#st2").hover(function() {
+              $(".fa-star").css("color", "black");
+              $("#st1, #st2").css("color", "yellow");
+
+          });
+          $("#st3").hover(function() {
+              $(".fa-star").css("color", "black")
+              $("#st1, #st2, #st3").css("color", "yellow");
+
+          });
+          $("#st4").hover(function() {
+              $(".fa-star").css("color", "black");
+              $("#st1, #st2, #st3, #st4").css("color", "yellow");
+
+          });
+          $("#st5").hover(function() {
+              $(".fa-star").css("color", "black");
+              $("#st1, #st2, #st3, #st4, #st5").css("color", "yellow");
+
+          });
+        });
+    </script>
+
+   
+
+  </body>
+</html>

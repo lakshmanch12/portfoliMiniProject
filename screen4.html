@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8" />
+    <link href ="./assets/css/style.css" rel="stylesheet" type="text/css">
+    <!-- Required CDN's -->
+    <link rel="stylesheet"
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+    <script src=
+"https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.7.21/jquery.zoom.js">
+
+    </script>
+  
+    <style>
+        body {
+            margin: 0px;
+        }
+        h1 {
+            color: green;
+        }
+        .container {
+            display: block;
+            padding: 0px;
+        }
+          
+        .contain {
+            position: fixed;
+            right: 10%;
+            top: 5%;
+            width: 500px;
+            height: 520px;
+            z-index: 1;
+        }
+          .mater{
+            margin-top: 10px;
+            font-size:14px
+          }
+        .magnifyimg {
+            width: 350px;
+            height: 350px;
+            border-radius: 5px;
+            margin: 5%;
+        }
+        .checked{
+  color: orange;
+}
+    </style>
+</head>
+  
+<body onload="firstimg('./assets/images/raj.jpeg')">
+      <div style="background-color:; padding: 10px; padding-bottom: 10px;">Beautfull places to visit our city</div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="parent" style="margin-bottom: 10px;">
+                    <img src=
+        "./assets/images/raj.jpeg " class="rounded magnifyimg ">
+                </div>
+          <div> 
+            <img src="./assets/images/raj1.jpg" id="tap" alt=""height="150px" width="150px" onclick="firstimg('./assets/images/raj1.jpg','#tap')">
+            <img src="./assets/images/raj2.jpeg" id="tap1" alt="" height="150px" width="150px" onclick="firstimg('./assets/images/raj2.jpeg','#tap1')">
+            <img src="./assets/images/raj3.jpeg" id="tap2" alt="" height="150px" width="150px" onclick="firstimg('./assets/images/raj3.jpeg' ,'#tap2')">
+          </div>
+                <span class="contain">
+               
+            </span>
+            </div>
+            <div class="col-sm-6">
+                <h2>ABOUT RAJASTHAN</h2>
+                <p>
+   The Chera dynasty was the first prominent kingdom based in Kerala. The Ay kingdom in the deep south and the Ezhimala kingdom in the north formed the other kingdoms in the early years of the Common Era (CE). The region had been a prominent spice exporter since 3000 BCE. The region's prominence in trade was noted in the works of Pliny as well as the Periplus around 100 CE. In the 15th century, the spice trade attracted Portuguese traders to Kerala, and paved the way for European colonisation of India. At the time of Indian independence movement in the early 20th century, there were two major princely states in Kerala: Thiruvithamkoor and Cochin. They united to form the state of Thiru-Kochi in 1949. The Malabar region, in the northern part of Kerala, had been a part of the Madras province of British India, which later became a part of the Madras State post-independence. After the States Reorganisation Act, 1956, the modern-day state of Kerala was formed by merging the Malabar district of Madras State (excluding Gudalur taluk of Nilgiris district, Lakshadweep Islands, Topslip, the Attappadi Forest east of Anakatti), the taluk of Kasaragod (now Kasaragod District) in South Canara, and the erstwhile state of Thiru-Kochi (excluding four southern taluks of Kanyakumari district, and Shenkottai taluks).
+                </p>
+               
+            </div>
+             
+        
+    </div>
+    </div>
+    
+    <div class="footer">
+  <div class="container">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+          <div class="logo "> <img src ="./assets/images/footer_logo.png"> </div>
+        </div>
+               <div class="col-lg-12 col-md-12 col-sm-12 ">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 ">
+              <p>© Digiqole, 2022. All rights reserved.</p>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 ">
+              <div class="socialicons1"> <a href="#" target="_blank" style="text-decoration:none !important"><i class="fab fa-facebook-f fb-icon"></i> </a> <a href="#" target="_blank"> <i class="fab fa-twitter twitter-icon"></i></a> <a href="#" target="_blank"><i class="fab fa-instagram"></i></a> <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a> <a href="#" target="_blank"><i class="fab fa-tumblr"></i></a> <a href="#" target="_blank"><i class="fab fa-vimeo-v"></i></a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+  
+    <script>
+        // $(document).ready(function() {
+  
+        //     $('.parent').css('width', $('.magnifyimg').width());
+  
+        //     $('.magnifyimg')
+        //         .parent()
+        //         .zoom({
+        //             magnify: 4,
+        //             target: $('.contain').get(0)
+        //         });
+        // });
+
+        function firstimg(url,id){
+            // console.log("sdfg",url)
+            $('.magnifyimg').removeAttr('src')
+            $('.magnifyimg').attr('src',url)
+            $("#tap").css("border","none");
+            $("#tap1").css("border","none");
+            $("#tap2").css("border","none");
+            $(id).css("border","1px solid green");
+            $('.parent').css('width', $('.magnifyimg').width());
+            console.log($('.contain').get(0))
+            $('.magnifyimg')
+                .parent()
+                .zoom({
+                magnify: 4,
+                target: $('.contain').get(0)
+            });       
+            
+        }
+    </script>
+</body>
+  
+</html>                      
